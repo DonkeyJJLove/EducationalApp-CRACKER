@@ -1,7 +1,7 @@
 
 # EducationalApp-CRACKER (REPO SET-UP)
 
-EducationalApp-CRACKER to aplikacja dydaktyczna, która pomaga zrozumieć, jak tworzyć i crackować pliki wykonywalne (.exe). Dzięki tej aplikacji młodzi programiści mogą nauczyć się podstaw tworzenia plików .exe, zabezpieczania ich przed atakami oraz optymalizacji ich działania.
+EducationalApp-CRACKER to aplikacja dydaktyczna, która pomaga zrozumieć, jak tworzyć i crackować pliki wykonywalne (.exe). Dzięki tej aplikacji młodzi programiści mogą nauczyć się podstaw tworzenia plików .exe, zabezpieczania ich przed atakami oraz optymalizacji ich działania. Dodatkowo, aplikacja obejmuje również crackowanie i zabezpieczanie plików Java oraz .NET przed dekompilacją, co pozwala na jeszcze szersze zrozumienie zagadnień związanych z bezpieczeństwem i ochroną kodu w różnych środowiskach programistycznych.
 
 ## Struktura Katalogów
 
