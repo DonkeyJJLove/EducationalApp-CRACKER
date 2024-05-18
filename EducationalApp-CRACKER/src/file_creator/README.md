@@ -3,4 +3,3 @@ Moduł `file_creator` jest odpowiedzialny za generowanie plików binarnych (.exe
 1. `generators`: Służy do generowania plików binarnych.
 2. `utils`: Zawiera narzędzia wspomagające, takie jak logger.
 
-## Struktura Katalogów

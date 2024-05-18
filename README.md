@@ -6,14 +6,45 @@ Witamy w EducationalApp-CRACKER! Ta aplikacja dydaktyczna pomaga zrozumieć, jak
 ## Struktura Katalogów
 
 ```
-/EducationalApp-CRACKER
-├── /src
-│   ├── /exe_creator
-│   ├── /exe_cracker
-│   ├── main.py
-├── /tests
-├── /docs
-└── create_structure.ps1
+cracker/
+├── EducationalApp-CRACKER/
+│   ├── docs/
+│   │   ├── README.md
+│   │   └── requirements.txt
+│   ├── src/
+│   │   ├── doc_generator/
+│   │   │   ├── __init__.py
+│   │   │   └── README.md
+│   │   ├── file_cracker/
+│   │   │   ├── crackers/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── dotnet_cracker.py
+│   │   │   │   └── general_cracker.py
+│   │   ├── file_creator/
+│   │   │   ├── generators/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── exe_generator.py
+│   │   │   │   ├── java_generator.py
+│   │   │   │   └── README.md
+│   │   │   ├── utils/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── logger.py
+│   │   │   └── __init__.py
+│   │   ├── utils/
+│   │   │   ├── __init__.py
+│   │   │   ├── README.md
+│   │   └── main.py
+│   ├── tests/
+│   │   ├── test_cracker.py
+│   │   ├── test_creator.py
+│   │   ├── test_doc_generator.py
+│   │   └── __init__.py
+│   ├── LICENSE
+│   └── main.py
+├── venv/
+├── .gitignore
+└── README.md
+
 ```
 
 ## Opowieść o Super Krowie i Super Psie
