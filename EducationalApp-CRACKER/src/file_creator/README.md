@@ -1,17 +1,6 @@
-## generators
+Moduł `file_creator` jest odpowiedzialny za generowanie plików binarnych (.exe, .jar). W skład modułu wchodzą dwa główne submoduły:
 
-- `exe_generator.py`: Generuje pliki .exe z kodu źródłowego Pythona.
-- `java_generator.py`: Generuje pliki .jar z kodu źródłowego Java.
+1. `generators`: Służy do generowania plików binarnych.
+2. `utils`: Zawiera narzędzia wspomagające, takie jak logger.
 
-### utils
-
-- `logger.py`: Ustawia logger dla aplikacji.
-
-## Instalacja i Użycie
-
-### Generowanie Pliku .exe
-
-Aby utworzyć plik .exe z kodu źródłowego Pythona, użyj poniższej komendy:
-
-```bash
-python src/file_creator/generators/exe_generator.py path_to_your_script.py --output path_to_output.exe
+## Struktura Katalogów
