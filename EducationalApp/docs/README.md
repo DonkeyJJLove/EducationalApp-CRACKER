@@ -18,10 +18,10 @@ EducationalApp to aplikacja dydaktyczna mająca na celu naukę tworzenia plików
 ├── /tests
 │   ├── test_creator.py
 │   ├── test_cracker.py
-├── /docs
-│   ├── README.md
-│   ├── requirements.txt
-└── create_structure.ps1
+└── /docs
+    ├── README.md
+    └──requirements.txt
+
 ```
 
 ## Wymagania
