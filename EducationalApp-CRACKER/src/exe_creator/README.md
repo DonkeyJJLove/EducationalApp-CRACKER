@@ -1,61 +1,132 @@
+# EducationalApp-CRACKER
 
-# Moduł exe_creator
-
-Moduł `exe_creator` jest odpowiedzialny za generowanie plików wykonywalnych oraz crackowanie zabezpieczeń. W skład modułu wchodzą trzy główne submoduły:
-
-1. `binary_generators`: Służy do generowania plików binarnych (.exe, .jar).
-2. `crackers`: Służy do łamania zabezpieczeń plików wykonywalnych, w tym plików .NET.
-3. `utils`: Zawiera narzędzia wspomagające, takie jak logger.
+EducationalApp-CRACKER to aplikacja dydaktyczna mająca na celu naukę tworzenia i crackowania plików wykonywalnych (.exe) oraz plików Java (.jar). Aplikacja uczy także technik łamania zabezpieczeń plików .NET.
 
 ## Struktura Katalogów
 
 ```
-/exe_creator
-├── /binary_generators
-│   ├── exe_generator.py
-│   ├── java_generator.py
-├── /crackers
-│   ├── dotnet_cracker.py
-│   ├── general_cracker.py
-├── /utils
-│   ├── logger.py
-└── __init__.py
+/EducationalApp-CRACKER
+├── /src
+│   ├── /exe_creator
+│   │   ├── /binary_generators
+│   │   │   ├── exe_generator.py
+│   │   │   ├── java_generator.py
+│   │   ├── /crackers
+│   │   │   ├── dotnet_cracker.py
+│   │   │   ├── general_cracker.py
+│   │   ├── /utils
+│   │   │   ├── logger.py
+│   │   └── __init__.py
+│   ├── /exe_cracker
+│   │   ├── cracker.py
+│   │   └── __init__.py
+│   ├── main.py
+├── /tests
+│   ├── test_creator.py
+│   ├── test_cracker.py
+├── /docs
+│   ├── README.md
+│   ├── requirements.txt
+├── create_structure.ps1
+├── LICENSE
+└── README.md
 ```
 
-### binary_generators
+## Instalacja
 
-- `exe_generator.py`: Generuje pliki .exe z kodu źródłowego Pythona.
-- `java_generator.py`: Generuje pliki .jar z kodu źródłowego Java.
+1. Sklonuj repozytorium:
 
-### crackers
+   ```bash
+   git clone https://github.com/DonkeyJJLove/EducationalApp-CRACKER.git
+   ```
 
-- `dotnet_cracker.py`: Crackuje pliki .NET.
-- `general_cracker.py`: Crackuje ogólne pliki wykonywalne.
+2. Przejdź do katalogu projektu:
 
-### utils
+   ```bash
+   cd EducationalApp-CRACKER
+   ```
 
-- `logger.py`: Ustawia logger dla aplikacji.
+3. Utwórz wirtualne środowisko:
 
-## Instalacja i Użycie
+   ```bash
+   python -m venv venv
+   ```
 
-1. Aby utworzyć plik .exe z kodu źródłowego Pythona:
+4. Aktywuj wirtualne środowisko:
 
-    ```bash
-    python src/exe_creator/binary_generators/exe_generator.py path_to_your_script.py
-    ```
+   - Windows:
 
-2. Aby utworzyć plik .jar z kodu źródłowego Java:
+     ```bash
+     .\venv\Scripts\activate
+     ```
 
-    ```bash
-    python src/exe_creator/binary_generators/java_generator.py path_to_your_script.java
-    ```
+5. Zainstaluj wymagane pakiety:
 
-3. Aby crackować plik .NET:
+   ```bash
+   pip install -r docs/requirements.txt
+   ```
 
-    ```bash
-    python src/exe_creator/crackers/dotnet_cracker.py path_to_exe_file.exe
-    ```
+## Użycie
 
-## Logowanie
+### Moduł Tworzenia Pliku .exe
+
+Aby utworzyć plik .exe z kodu źródłowego Pythona:
+
+```bash
+python src/exe_creator/binary_generators/exe_generator.py path_to_your_script.py --output path_to_output.exe
+```
+
+### Moduł Tworzenia Pliku .jar
+
+Aby utworzyć plik .jar z kodu źródłowego Java:
+
+```bash
+python src/exe_creator/binary_generators/java_generator.py path_to_your_script.java --output path_to_output.jar
+```
+
+### Moduł Crackowania Pliku .NET
+
+Aby crackować plik .NET:
+
+```bash
+python src/exe_creator/crackers/dotnet_cracker.py path_to_exe_file.exe
+```
+
+### Moduł Crackowania Ogólnego Pliku Wykonywalnego
+
+Aby crackować ogólny plik wykonywalny:
+
+```bash
+python src/exe_creator/crackers/general_cracker.py path_to_exe_file.exe
+```
+
+### Logowanie
 
 Logi są zapisywane w plikach logów w katalogu projektu. Każdy submoduł ma swój własny plik logów, co umożliwia łatwą analizę.
+
+### Użycie Pliku `main.py`
+
+Plik `main.py` umożliwia uruchamianie różnych trybów pracy aplikacji. Przykładowe użycie:
+
+```bash
+python src/main.py --mode generate_exe --input path_to_your_script.py --output path_to_output.exe
+python src/main.py --mode generate_jar --input path_to_your_script.java --output path_to_output.jar
+python src/main.py --mode crack_dotnet --input path_to_exe_file.exe
+python src/main.py --mode crack_general --input path_to_exe_file.exe
+```
+
+## Testowanie
+
+Aby uruchomić testy:
+
+```bash
+pytest tests/
+```
+
+## Licencja
+
+Projekt jest dostępny na licencji MIT. Więcej informacji w pliku `LICENSE`.
+
+---
+
+Dziękujemy za korzystanie z EducationalApp-CRACKER! Mamy nadzieję, że aplikacja ta pomoże Ci zrozumieć podstawy tworzenia oraz crackowania plików .exe i .jar oraz technik łamania zabezpieczeń plików .NET.
