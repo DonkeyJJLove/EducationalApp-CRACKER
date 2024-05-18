@@ -1,7 +1,6 @@
 import argparse
 import os
 
-
 from src.file_creator.generators import exe_generator, java_generator
 from src.file_cracker.crackers import dotnet_cracker, general_cracker
 from src.file_creator.utils.logger import setup_logger
