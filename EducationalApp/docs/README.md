@@ -35,7 +35,7 @@ EducationalApp to aplikacja dydaktyczna mająca na celu naukę tworzenia plików
 1. Sklonuj repozytorium:
 
    ```bash
-   git clone https://github.com/twoje-repozytorium/EducationalApp.git
+   git clone https://github.com/DonkeyJJLove/EducationalApp-CRACKER.git
    ```
 
 2. Przejdź do katalogu projektu:
@@ -91,16 +91,6 @@ pytest tests/
 ```
 
 ## Dokumentacja
-
-Dokumentacja projektu znajduje się w katalogu `docs`. Plik `requirements.txt` zawiera listę wymaganych pakietów do zainstalowania.
-
-## Tworzenie Struktury Katalogów
-
-Jeżeli chcesz stworzyć strukturę katalogów dla projektu od podstaw, użyj skryptu PowerShell `create_structure.ps1`:
-
-```powershell
-.\create_structure.ps1
-```
 
 ## Wkład
 
