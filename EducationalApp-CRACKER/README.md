@@ -10,7 +10,8 @@ cracker/
 ├── EducationalApp-CRACKER/
 │   ├── docs/
 │   │   ├── README.md
-│   │   └── requirements.txt
+│   │   ├── requirements.txt
+│   │   └── README.md
 │   ├── src/
 │   │   ├── doc_generator/
 │   │   │   ├── __init__.py

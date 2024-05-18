@@ -10,7 +10,8 @@ cracker/
 ├── EducationalApp-CRACKER/
 │   ├── docs/
 │   │   ├── README.md
-│   │   └── requirements.txt
+│   │   ├── requirements.txt
+│   │   └── README.md
 │   ├── src/
 │   │   ├── doc_generator/
 │   │   │   ├── __init__.py
@@ -113,7 +114,7 @@ Aby zainstalować i uruchomić EducationalApp-CRACKER, wykonaj następujące kro
    ```bash
    python -m venv venv
    source venv/bin/activate   # Dla systemu Unix/macOS
-   .\venv\Scripts\activate    # Dla systemu Windows
+   ./venv/Scripts/activate    # Dla systemu Windows
    ```
 
 4. Zainstaluj wymagane zależności:
