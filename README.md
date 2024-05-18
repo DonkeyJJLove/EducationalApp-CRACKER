@@ -12,8 +12,11 @@ Witamy w EducationalApp-CRACKER! Ta aplikacja dydaktyczna pomaga zrozumieć, jak
 │   ├── /exe_cracker
 │   ├── main.py
 ├── /tests
-└── /docs
+├── /docs
+└── create_structure.ps1
 ```
+
+## ASCII Art
 
 ```
    _____            _        _        _ 
