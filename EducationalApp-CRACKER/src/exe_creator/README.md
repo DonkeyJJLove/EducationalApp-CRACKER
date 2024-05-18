@@ -32,42 +32,6 @@ EducationalApp-CRACKER to aplikacja dydaktyczna mająca na celu naukę tworzenia
 └── README.md
 ```
 
-## Instalacja
-
-1. Sklonuj repozytorium:
-
-   ```bash
-   git clone https://github.com/DonkeyJJLove/EducationalApp-CRACKER.git
-   ```
-
-2. Przejdź do katalogu projektu:
-
-   ```bash
-   cd EducationalApp-CRACKER
-   ```
-
-3. Utwórz wirtualne środowisko:
-
-   ```bash
-   python -m venv venv
-   ```
-
-4. Aktywuj wirtualne środowisko:
-
-   - Windows:
-
-     ```bash
-     .\venv\Scripts\activate
-     ```
-
-5. Zainstaluj wymagane pakiety:
-
-   ```bash
-   pip install -r docs/requirements.txt
-   ```
-
-## Użycie
-
 ### Moduł Tworzenia Pliku .exe
 
 Aby utworzyć plik .exe z kodu źródłowego Pythona:
