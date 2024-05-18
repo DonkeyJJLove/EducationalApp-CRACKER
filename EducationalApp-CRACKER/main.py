@@ -1,8 +1,10 @@
 import argparse
 import os
-from exe_creator.binary_generators import exe_generator, java_generator
-from exe_creator.crackers import dotnet_cracker, general_cracker
-from exe_creator.utils.logger import setup_logger
+
+
+from src.file_creator.generators import exe_generator, java_generator
+from src.file_cracker.crackers import dotnet_cracker, general_cracker
+from src.file_creator.utils.logger import setup_logger
 
 
 def main():
