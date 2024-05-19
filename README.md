@@ -12,10 +12,6 @@ cracker/
 │   │   ├── README.md
 │   │   ├── requirements.txt
 │   │   └── README.md
-│   ├── src/
-│   │   ├── doc_generator/
-│   │   │   ├── __init__.py
-│   │   │   └── README.md
 │   │   ├── file_cracker/
 │   │   │   ├── crackers/
 │   │   │   │   ├── __init__.py
@@ -45,6 +41,7 @@ cracker/
 ├── venv/
 ├── .gitignore
 └── README.md
+
 ```
 
 ## Opowieść o Super Krowie, Super Psie i Super Jeżu
